@@ -19,9 +19,9 @@
 	</header>
 	<nav class="navbar">
         <section class="menu">
-		<ul class="menu">
-			<li><a class="current" href="index.html">Home</a></li>
-			<li><a href="/IS117_Website_P4/Pages/AllAboutCats.html">All About Cat Care</a></li>
+			<ul class="menu">
+				<li><a class="current" href="index.html">Home</a></li>
+				<li><a href="/IS117_Website_P4/Pages/AllAboutCats.html">All About Cat Care</a></li>
             <li class="submenu">
                 <a href="/IS117_Website_P4/Pages/AllAboutPets.html">All About Pet Care</a>
                 <ul class="dropdown">
@@ -37,7 +37,7 @@
 				</ul>
 			</li>
             <li><a href="/IS117_Website_P4/Pages/ContactMe.html">Contact Me!</a></li>
-		</ul>
+			</ul>
         </section>
 	</nav>
 	<main>
@@ -84,5 +84,23 @@
 	<footer>
 		<p>&copy;Haylie Repuyan 2025 | Terms of Use | Privacy Statement</p>
 	</footer>
+
+
+	<!-- Responsive HTML-->
+	 <script>
+  		const toggle = document.querySelector('.menu-toggle');
+  		const menu = document.querySelector('.menu-container');
+
+ 		 toggle.addEventListener('click', () => {
+    		menu.classList.toggle('active');
+  		});
+
+  		document.querySelectorAll('.submenu > a').forEach(link => {
+    		link.addEventListener('click', e => {
+     		 e.preventDefault();
+      			link.parentElement.classList.toggle('open');
+   			 });
+  			});
+	</script>
 </body>
 </html>
