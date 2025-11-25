@@ -1,0 +1,92 @@
+<!--DEVELOPER: Haylie Repuyan, IS117-007, Fall 2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="../Images/test_logo.png">
+	<link rel="stylesheet" href="../Styles/contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<title>Contact Me</title>
+</head>
+<body>
+     <header>
+		<img src="../Images/test_logo.png" alt="Website logo">
+		<h2>All About Cats</h2>
+	</header>
+	<nav class="navbar">
+		<ul class="menu">
+			<li><a class="current" href="../index.html">Home</a></li>
+			<li><a href="../Pages/AllAboutCats.html">All About Cat Care</a></li>
+            <li class="submenu">
+               <a href="../Pages/AllAboutPets.html">All About Pet Care</a>
+                <ul class="dropdown">
+					<li><a href="../Pages/WhereToFindYourNewCompanion.html">Where to Find Your New Companion</a></li>
+					<li><a href="../Pages/ProsandCons.html">Pros and Cons</a></li>
+				</ul>
+            </li>
+			<li class="submenu">
+				<a href="../Pages/AboutUs.html">About Us<small></small></a>
+				<ul class="dropdown">
+					<li><a href="../Pages/TheDev.html">The Developer</a></li>
+					<li><a href="../Pages/TheCats.html">The Cats</a></li>
+				</ul>
+			</li>
+            <li><a href="../Pages/ContactMe.html">Contact Me!</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h1>Contact Me</h1>
+
+			 <section id="info">
+      			<h4>Contact Information:</h4>
+      			<p><strong>Email:</strong> info@allaboutpets.com</p>
+     			<p><strong>Phone:</strong> (555) 123-4567</p>
+      			<p><strong>Address:</strong> 123 Pet Street, Newark, NJ, USA</p>
+			 </section>
+
+			<img class="contact-photo" src="../Images/contact.jpg" alt="contact photo">
+
+			<section class="social">
+      			<h4>Let's Stay in Touch:</h4>
+      			<ul>
+        			<li><a href="#">Facebook</a></li>
+        			<li><a href="#">Instagram</a></li>
+        			<li><a href="#">Twitter</a></li>
+      			</ul>
+    		</section>
+
+	<section class="email-form">
+		<form>
+			<h4>Send Me a "Meow"ssage:</h4>
+  			<div class="mb-3">
+    			<label for="exampleInputEmail1" class="form-label">Email address:</label>
+    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    		<div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+  			</div>
+  			<div class="mb-3">
+    			<label for="exampleInputMessage1" class="form-label">Message:</label>
+    			<input type="text" class="form-control" id="exampleInputMessage1">
+ 		 	</div>
+  			<button type="submit" class="btn btn-primary" onclick="siteMessage()">Submit</button>
+			</form>
+	</section>
+	
+	
+	<!-- Alert when pressing "Submit"-->
+	<script>
+				
+              function siteMessage() {
+                alert("Thank you for sending me a meowssage! :)");
+              }
+            </script>
+
+</main>
+
+	<footer>
+		<p>&copy;Haylie Repuyan 2025 | Terms of Use | Privacy Statement</p>
+	</footer>
+</body>
+</html>

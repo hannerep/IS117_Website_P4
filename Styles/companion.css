@@ -1,0 +1,196 @@
+/* Foundation */
+:root {
+  --bg: #FAF7F0;
+  --text: #3D2B1F;
+  --lighttext: #FBFAF8;
+  --navmenu: #FAF7F0;
+  --muted: #6F4E37;
+  --accent: #A0785A;
+  --border: #635147;
+  --hover: #DAC8AE;
+  --hover2: #DA9100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+  img {
+    margin: 2rem;
+  }
+
+/* Styles for the header */
+header {
+  text-align: center;
+  padding-top: 1rem;
+  background-image: url('../Images/banner_photo_final.jpg');
+  background-size: cover;    /* scales image to cover entire header */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+}
+
+header img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: var(--lighttext);
+}
+
+/* Navbar styles */
+nav.navbar {
+    background-color: var(--accent);
+    width: 100%;
+    display: block;
+
+}
+
+nav.navbar ul.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+/* Dropdown Menu Styles */
+
+nav.navbar .submenu {
+  position: relative;
+}
+
+nav.navbar .submenu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--accent);
+  border-radius: 5px;
+  min-width: 220px;
+  z-index: 1000;
+}
+
+nav.navbar .submenu:hover .dropdown {
+  display: block;
+}
+
+nav.navbar .dropdown li a {
+  color: var(--navmenu);
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav.navbar .dropdown li a:hover {
+  color: var(--text);
+}
+
+/* Section styles*/
+ul.menu {
+    a{
+    color: var(--navmenu);
+    font-family: "josefin sans", sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+    text-decoration: none;
+  }
+}
+
+/* Submenu list styles */
+ul.dropdown {
+    list-style: none;
+    display: flex;
+}
+
+
+/* Main styles */
+main {
+  flex: 1 0 auto;  
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+main h1 {
+  font-weight: bold;
+  font-family: 'josefin sans', sans-serif;
+}
+
+
+main h2, main h3 {
+  margin-bottom: 1rem;
+  font-family: 'josefin sans', sans-serif;
+}
+
+main p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+ul {
+    list-style: none;
+}
+/* Section styles */
+section.intro {
+
+    h2 {
+        margin-top: 2rem;
+    }
+}
+
+section.rescues {
+
+    img {
+      max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    height: auto;
+    margin: 1rem 0;
+    }
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  display: block;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+  background-color: var(--bg); /* Optional: keeps it from looking transparent */
+}
